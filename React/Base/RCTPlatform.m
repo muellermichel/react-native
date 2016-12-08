@@ -23,8 +23,9 @@ static NSString *interfaceIdiom(UIUserInterfaceIdiom idiom) {
       return @"pad";
     case UIUserInterfaceIdiomTV:
       return @"tv";
-    case UIUserInterfaceIdiomCarPlay:
-      return @"carplay";
+  // Please note: the following enum value has compatibility issues with XCode 7.2
+  //  case UIUserInterfaceIdiomCarPlay:
+  //    return @"carplay";
     default:
       return @"unknown";
   }
